@@ -5,7 +5,7 @@ exports.up = function (knex, Promise) {
         table.text('password').notNullable();
         table.text('name').notNullable();
         table.text('lastname').notNullable();
-        table.datetime('date').notNullable();
+        table.datetime('created_at').notNullable();
         table.datetime('updated_at').notNullable();
         table.boolean('is_active').notNullable().defaultTo(true);
     });
