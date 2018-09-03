@@ -1,4 +1,4 @@
-# Sticker Mania
+# ProyectoK 2018
 
 ## Getting Started
 
