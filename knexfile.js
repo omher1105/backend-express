@@ -4,13 +4,17 @@ require('dotenv').config();
 
 module.exports = {
 
-  development: {
-    client: 'pg',
-    connection: 'postgres://localhost/sticker-mania'
-  },
-  production: {
-    client: 'pg',
-    connection: process.env.DATABASE_URL + '?ssl=true'
-  }
+    development: {
+        client: 'pg',
+        connection: {
+            database: 'proyectok2018',
+            user: 'postgres',
+            password: '123456'
+        }
+    },
+    production: {
+        client: 'pg',
+        connection: process.env.DATABASE_URL + '?ssl=true'
+    }
 
 };

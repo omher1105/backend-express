@@ -5,16 +5,16 @@ exports.seed = (knex, Promise) => {
           {
             id: 1,
             email: 'berto.ort@gmail.com',
-            password: 'pineapple',
+            password: 'proyectok2018',
             created_at: new Date()
           },
           {
             id: 2,
             email: 'hello@cjr.co.de',
-            password: 'keyboard_cat',
+            password: 'proyectok2018',
             created_at: new Date()
           }
-        ]
+        ];
         return knex('user').insert(users)
       })
 };
